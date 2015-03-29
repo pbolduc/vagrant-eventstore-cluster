@@ -1,3 +1,3 @@
 site :opscode
 
-cookbook 'eventstore', github: 'seif/eventstore-cookbook' 
+cookbook 'eventstore', github: 'pbolduc/eventstore-cookbook' 
