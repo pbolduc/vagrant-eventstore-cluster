@@ -42,13 +42,13 @@ Vagrant.configure("2") do |cluster|
             :config => {
               :IntIp => seed['ip'],
               :ExtIp => seed['ip'],
-              :IntHttpPort => 2113,
-              :ExtHttpPort => 2114,
-              :IntTcpPort => 1111,
-              :ExtTcpPort => 1112,
+              :IntHttpPort => 2112,
+              :ExtHttpPort => 2113,
+              :IntTcpPort => 1112,
+              :ExtTcpPort => 1113,
               :ClusterSize => NODE_COUNT,
               :DiscoverViaDns => false,
-              :GossipSeed => seeds.reject{|s| s['index'] == seed['index']}.map{|i| "#{i['ip']}:2113"}
+              :GossipSeed => seeds.reject{|s| s['index'] == seed['index']}.map{|i| "#{i['ip']}:2112"}
             }
           }
         }
